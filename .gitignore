@@ -1,0 +1,52 @@
+# IntelliJ IDEA-specific
+.idea/
+*.iml
+*.iws
+out/
+target/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Compiled class files
+*.class
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Eclipse (just in case someone imports there)
+.project
+.classpath
+.settings/
+
+# Temp files
+*.tmp
+*.swp
+*~
+
+# JetBrains Rider
+.idea/
+*.sln
+*.user
+*.suo
+*.csproj
+*.pidb
+
+# Environment
+.env
+
+# VS Code (if opened there)
+.vscode/
+
+# Package managers
+node_modules/
