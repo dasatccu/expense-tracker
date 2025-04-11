@@ -1,4 +1,4 @@
-package org.example;
+package org.et.tests;
 
 import org.et.model.Category;
 import org.et.model.CategoryType;
