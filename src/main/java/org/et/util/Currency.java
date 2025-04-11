@@ -143,8 +143,33 @@ public class Currency {
     }
 
     public Currency roundOff(){
+        LogService.info(TAG,"roundoff() called");
         double rounded = Math.round(value * 100.0) / 100.0;
         return new Currency(rounded);
+    }
+
+    public boolean isEqual(Currency currency){
+        LogService.info(TAG,"isEqual() called");
+        if(currency.getActualValue() == this.value)
+            return true;
+        else
+            return false;
+    }
+
+    public boolean isMoreThan(Currency currency){
+        LogService.info(TAG,"isMoreThan() called");
+        if(currency.getActualValue() > this.value)
+            return true;
+        else
+            return false;
+    }
+
+    public boolean isLessThan(Currency currency){
+        LogService.info(TAG,"isLessThan() called");
+        if(currency.getActualValue() < this.value)
+            return true;
+        else
+            return false;
     }
 
     @Override
